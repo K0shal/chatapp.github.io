@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./client.js"></script>
+    <title>Chat Hi Chat</title>
+    <style>
+        * {
+            padding: 0px;
+            overflow: hidden;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: url('./back.jpg') no-repeat;
+            background-size: cover;
+        }
+        
+        .chatBox {
+            background-color: red;
+            height: 60%;
+            width: 50%;
+            margin-top: 5%;
+            margin-left: 25%;
+            overflow-y: auto;
+        }
+        
+        .chat {
+            /* background-color: black; */
+            height: 7%;
+            width: 40%;
+            margin-top: 7%;
+            margin-right: 2%;
+            margin-left: 7%;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        .left {
+            float: left;
+            clear: both;
+        }
+        
+        .right {
+            float: right;
+            clear: both;
+        }
+        
+        form {
+            margin-left: 25%;
+            margin-top: 2px;
+            height: 10%;
+            width: 50%;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chatBox" id="chatBox1">
+        <!-- <div class="chat  right">
+
+        </div>
+        <div class="chat left">
+
+        </div> -->
+
+    </div>
+    <form action="" class="form" id="form1">
+        <input type="text" name="" value="" id="message">
+        <button type="">send</button>
+
+    </form>
+
+
+</body>
+
+</html>
